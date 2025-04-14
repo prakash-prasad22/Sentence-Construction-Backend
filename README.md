@@ -1,22 +1,21 @@
-# JSON_Server_Deployment
+# JSON Server Deployment
 
+This repository provides a simple setup for creating a JSON Server to be used as a backend for the Quiz Application.  It's designed for quick deployment on platforms like Render.com.
 
+## Purpose
 
+We are using JSON Server to:
 
-By utilizing the provided template, you will be able to create your JSON server repository, which can be deployed on render.com
---------------
+* Provide mock API endpoints for quiz data.
+* Simplify the process of fetching and managing quiz questions, options, and answers.
+* Enable rapid development of the Quiz Application's frontend without requiring a full database setup.
 
+## Key Files
 
-[![Nice UI](https://img.youtube.com/vi/W9sbA1a2-Ag/0.jpg)](https://www.youtube.com/watch?v=W9sbA1a2-Ag)
+* `db.json`:  Contains the quiz data in JSON format.  This file is used by JSON Server to create the API.
+* `server.js`:  A Node.js script that configures and runs the JSON Server.  This is necessary for deployment on Render.com.
+* `package.json`: Defines the dependencies and scripts for the project, including running the JSON Server.
 
+## Data Structure
 
-In this video, I have covered three simple steps to quickly deploy your **JSON Server** on render.com.
-
-Three Simple Steps:
-
-1. Create a repository from the template.
-2. Add your own data.
-3. Deploy it.
-
-Believe me, this is the **easiest way** to deploy your JSON server on render.com. Deploy your db.json file without writing a **single line of code**.
-
+The `db.json` file should be structured as a JSON object, typically containing arrays of objects.
